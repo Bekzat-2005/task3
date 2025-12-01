@@ -1,4 +1,5 @@
 <?php
+
 function valid($v) {
     return preg_match('/^\d+$/', $v);
 }
@@ -17,12 +18,12 @@ function lcm_php($x, $y) {
     return (string)(($x / gcd_php($x, $y)) * $y);
 }
 
-$x = $_GET['x'] ?? null;
-$y = $_GET['y'] ?? null;
+$x = $_GET["x"] ?? null;
+$y = $_GET["y"] ?? null;
 
 if (!valid($x) || !valid($y)) {
     echo "NaN";
     exit;
 }
 
-echo lcm_php((int)$x, (int)$y);
+echo lcm_php($x, $y);
