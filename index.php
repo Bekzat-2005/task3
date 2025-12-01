@@ -3,7 +3,7 @@ error_reporting(0);
 ini_set('display_errors', 0);
 
 function valid($v) {
-    return is_string($v) && preg_match('/^\d+$/', $v);
+    return isset($v) && preg_match('/^\d+$/', $v);
 }
 
 function gcd_php($a, $b) {
