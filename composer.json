@@ -1,7 +1,0 @@
-{
-  "name": "task3/lcm",
-  "description": "Simple LCM project",
-  "require": {
-    "php": ">=7.4"
-  }
-}
