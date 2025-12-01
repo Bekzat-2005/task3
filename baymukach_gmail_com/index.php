@@ -17,9 +17,7 @@ function lcm_php($x, $y) {
     if ($x == 0 || $y == 0) {
         return "0";
     }
-    $g = gcd_php($x, $y);
-    // чтобы уменьшить шанс переполнения, сначала делим
-    return (string)(int)(($x / $g) * $y);
+    return (string)(int)(($x / gcd_php($x, $y)) * $y);
 }
 
 $x = $_GET['x'] ?? null;
