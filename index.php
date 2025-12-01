@@ -1,7 +1,9 @@
 <?php
+error_reporting(0);
+ini_set('display_errors', 0);
 
 function valid($v) {
-    return preg_match('/^\d+$/', $v);
+    return is_string($v) && preg_match('/^\d+$/', $v);
 }
 
 function gcd_php($a, $b) {
