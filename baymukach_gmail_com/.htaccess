@@ -1,7 +1,0 @@
-DirectorySlash On
-
-RewriteEngine On
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.+)$ $1/ [L,R=301]
